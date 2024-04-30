@@ -1,0 +1,38 @@
+html {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+/* Global header tags */
+
+h1 {
+    margin: 10px;
+    padding: 0;
+}
+
+/* Header and navbar */
+
+header {
+    border-bottom: 2px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 10px 15px 10px 15px;
+}
+
+header ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#current-page {
+    color: grey;
+}
+
