@@ -1,6 +1,7 @@
 html {
     font-family: Roboto, sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 
 main {
@@ -73,6 +74,57 @@ header ul a {
 
 /* Projects */
 
+.my-projects .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.project {
+    position: relative;
+    max-width: 250px;
+    margin-bottom: 40px;
+}
+
+.project,
+.info,
+.project img {
+    border-radius: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.project .info {
+    position: absolute;
+    transition: opacity .2s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    opacity: 0;
+}
+
+.info h4,
+.info p {
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.project:hover .info {
+    opacity: 1;
+}
+
 /* Skills */
 
 
@@ -85,10 +137,15 @@ header ul a {
     margin-bottom: 30px;
 }
 
+.skills .bubbles img {
+    height: 40px;
+}
+
 /* Footer */
 
 footer {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    font-size: 0.8rem;
 }
