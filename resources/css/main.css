@@ -3,11 +3,24 @@ html {
     margin: 0;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Global header tags */
 
 h1 {
-    margin: 10px;
+    margin-top: 10px;
     padding: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin: 0;
 }
 
 /* Header and navbar */
@@ -24,7 +37,8 @@ header ul {
 
 header ul li {
     display: inline-block;
-    margin: 10px 15px 10px 15px;
+    margin-right: 15px;
+    margin-top: 3px;
 }
 
 header ul a {
@@ -34,5 +48,47 @@ header ul a {
 
 #current-page {
     color: grey;
+    border-bottom: 2px solid rgb(61, 75, 94);
 }
 
+/* About me section */
+
+.about-me .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me img {
+    width: 600px;
+    height: 200px;
+    float: right;
+    object-fit: cover;
+    margin: 0 70px;
+}
+
+.about-me p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+/* Projects */
+
+/* Skills */
+
+
+
+.skills .bubbles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
