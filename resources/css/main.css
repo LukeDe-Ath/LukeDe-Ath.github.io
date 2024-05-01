@@ -47,6 +47,10 @@ header ul a {
     color: black;
 }
 
+header ul a:hover {
+    border-bottom: 2px solid rgb(61, 75, 94);
+}
+
 #current-page {
     color: grey;
     border-bottom: 2px solid rgb(61, 75, 94);
@@ -125,9 +129,7 @@ header ul a {
 
 /* Skills */
 
-
-
-.skills .bubbles {
+.bubbles {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -135,8 +137,28 @@ header ul a {
     margin-bottom: 30px;
 }
 
-.skills .bubbles img {
+.bubbles img {
     height: 40px;
+}
+
+.bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble p {
+    font-size: 1rem;
+    overflow: hidden;
+    margin-left: 10px;
+    max-width: 0;
+    transition: max-width .5s;
+    white-space: nowrap;
+}
+
+.bubble:hover p {
+    display: block;
+    max-width: 100px;
 }
 
 /* Footer */
