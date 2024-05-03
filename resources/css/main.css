@@ -134,7 +134,11 @@ header ul a:hover {
 .info p {
     color: white;
     text-align: center;
-    margin: 10px 10px;
+    margin: 10px 20px;
+}
+
+.info h4 {
+    font-size: 1.5rem;
 }
 
 .project:hover .info {
@@ -249,3 +253,15 @@ footer {
 /* @media only screen and (min-width: 800px) and (max-width: 1024px) {
 
 } */
+
+/* Big monitors */
+
+@media only screen and (min-width: 1600px) {
+    .info h4 {
+        font-size: 2rem;
+    }
+    
+    .info p {
+        font-size: 1.2rem;
+    }
+}
