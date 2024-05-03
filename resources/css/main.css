@@ -40,6 +40,7 @@ header {
     border-bottom: 2px solid var(--bottom-line);
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 header ul {
@@ -194,6 +195,7 @@ footer {
 @media only screen and (max-width: 480px) {
     header {
         flex-flow: column wrap;
+        padding: 0;
     }
 
     h1, nav {

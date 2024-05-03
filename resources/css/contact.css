@@ -1,0 +1,53 @@
+#luke-beach {
+    margin: 2rem auto;
+    width: 100%;
+    object-fit: contain;
+    height: 400px;
+}
+
+.contact {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.contact h2 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.details {
+    font-size: 2rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+#icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#values {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Portrait mobile */
+@media only screen and (max-width: 480px) {
+    #luke-beach {
+        object-fit: cover;
+        object-position: 75%;
+    }    
+    
+    .details {
+        font-size: 1.5rem;
+    }
+}
