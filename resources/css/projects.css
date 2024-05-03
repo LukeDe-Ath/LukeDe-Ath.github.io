@@ -1,0 +1,30 @@
+.selection > .container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.selection img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 46%;
+    transition: width .3s, height .3s;
+}
+
+.selection img:hover {
+    width: 400px;
+    height: 400px;
+}
+
+.project-details .info-box {
+    background: #2c64a580;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    margin: 20px 0;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
